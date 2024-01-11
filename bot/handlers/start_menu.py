@@ -36,7 +36,7 @@ async def start_menu(msg: types.Message):
         else:
             numbers_button = types.KeyboardButton(main_buttons[1])
             base_address = os.environ.get('BASE_ADDRESS')
-            web_app = types.web_app_info.WebAppInfo(url=f'{base_address}donate')
+            web_app = types.web_app_info.WebAppInfo(url=f'{base_address}/donate')
             shop_button = types.KeyboardButton(main_buttons[0], web_app=web_app)
             help = types.KeyboardButton(main_buttons[2])
             data = types.KeyboardButton(main_buttons[3])
@@ -79,7 +79,7 @@ async def set_user_data(msg: types.Message, state: FSMContext):
         file = types.InputFile(photo)
         numbers_button = types.KeyboardButton(main_buttons[1])
         base_address = os.environ.get('BASE_ADDRESS')
-        web_app = types.web_app_info.WebAppInfo(url=f'{base_address}donate?')
+        web_app = types.web_app_info.WebAppInfo(url=f'{base_address}/donate?')
         shop_button = types.KeyboardButton(main_buttons[0], web_app=web_app)
         help = types.KeyboardButton(main_buttons[2])
         data = types.KeyboardButton(main_buttons[3])
