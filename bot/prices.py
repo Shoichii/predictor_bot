@@ -1,0 +1,13 @@
+life_path_numbers_price = 5
+birthday_numbers_price = 2
+expression_numbers_price = 2
+spirit_awake_numbers_price = 2
+personality_numbers_price = 2
+realization_number_price = 1
+bridges_number_price = 1
+mind_number_price = 1
+vertex_number_price = 1
+test_number_price = 1
+individual_years_number_price = 1
+individual_months_number_price = 1
+individual_days_number_price = 1

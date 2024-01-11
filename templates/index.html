@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Меню покупок</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Первый контент -->
+        <div class="buttons">
+            <div class="email">
+                <p class="description">Укажите E-mail для отправки чека</p>
+                <p class="error">Вы ввели неверный email.</p>
+                <input type="email"
+                    placeholder="Ваш E-mail">
+            </div>
+            <div class="buttons-item">10 👁 печатей 50р</div>
+            <div class="buttons-item">50 👁 печатей 350р</div>
+            <div class="buttons-item">100 👁 печатей 500р</div>
+            <div class="buttons-item buttons-item-cons">Консультация нумеролога - 400р</div>
+            <button></button>
+        </div>
+        <!-- Второй контент -->
+        <div class="payment">
+            <button class="back">Назад</button>
+            <div id="payment-form"></div>
+            <!-- <button class="pay">Заплатить</button> -->
+        </div>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="{% static 'pay_script.js' %}"></script>
+    <script type="text/javascript" src="https://www.payanyway.ru/assistant-builder">
+    </script>
+</body>
+
+</html>
