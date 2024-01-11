@@ -43,7 +43,7 @@ async def show_adm_menu(statistic, msg):
 <b>Заявки</b> - заявки на консультации
         '''
     base_address = os.environ.get('BASE_ADDRESS')
-    web_app = types.web_app_info.WebAppInfo(url=f'{base_address}/queries')
+    web_app = types.web_app_info.WebAppInfo(url=f'{base_address}queries')
     queries_button = types.InlineKeyboardButton(text='Заявки', web_app=web_app)
     speaker_button = types.InlineKeyboardButton('Оповещатель', callback_data='speaker_button')
     add_or_del_seals_button = types.InlineKeyboardButton('Печати', callback_data='add_or_del_seals_button')
